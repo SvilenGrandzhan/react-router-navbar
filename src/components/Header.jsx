@@ -8,14 +8,14 @@ export default function Header() {
         </div>
         <nav>
           <ul>
-            <li>
+            {/* <li>
               <a
                 className="nav-link"
                 href="/"
               >
                 Movies
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 className="nav-link"

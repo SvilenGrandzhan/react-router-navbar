@@ -1,4 +1,5 @@
 import "./Header.css";
+import CustomLink from "./CustomLink";
 export default function Header() {
   return (
     <header className="main-header">
@@ -8,30 +9,9 @@ export default function Header() {
         </div>
         <nav>
           <ul>
-            {/* <li>
-              <a
-                className="nav-link"
-                href="/"
-              >
-                Movies
-              </a>
-            </li> */}
-            <li>
-              <a
-                className="nav-link"
-                href="/shows.html"
-              >
-                TV Shows
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="/actors.html"
-              >
-                Actors
-              </a>
-            </li>
+            <CustomLink href="/movies">Movies</CustomLink>
+            <CustomLink href="/shows">TV Shows</CustomLink>
+            <CustomLink href="/actors">Actors</CustomLink>
           </ul>
         </nav>
       </div>

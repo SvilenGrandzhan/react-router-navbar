@@ -32,8 +32,16 @@
     margin-left: 20px;
 }
 
+.main-header ul li.active {
+    background-color: #555;
+}
+
 .main-header ul li a {
     font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
 }
 
 .main-header ul li a:hover {

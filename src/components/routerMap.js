@@ -1,23 +1,12 @@
-// import App from "../App";
-// import TVShows from "./TVShows";
-// import Actors from "./Actors";
+import TVShows from "./TVShows";
+import Actors from "./Actors";
+import Movies from "./Movies";
 
-// export const ROUTER_MAP = {
-//   "/": <App />,
-//   "/index.html": <App />,
-//   "/shows.html": <TVShows />,
-//   "/actors.html": <Actors />,
-// };
+const ROUTER_MAP = {
+  "/": Movies,
+  "/movies": Movies,
+  "/shows": TVShows,
+  "/actors": Actors,
+};
 
-// export const ROUTER_MAP = function () {
-//   switch (window.location.pathname) {
-//     case "/":
-//       return <App />;
-//     case "/shows.html":
-//       return <TVShows />;
-//     case "/actors.html":
-//       return <Actors />;
-//     default:
-//       return <App />;
-//   }
-// };
+export default ROUTER_MAP;

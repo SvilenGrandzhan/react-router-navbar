@@ -1,13 +1,15 @@
-export default function CustomLink({ href, children, ...props }) {
+import { Link } from "react-router-dom";
+
+export default function CustomLink({ to, children, ...props }) {
   const path = window.location.pathname;
   return (
-    <li className={path === href ? "active" : ""}>
-      <a
-        href={href}
+    <li className={path === to ? "active" : ""}>
+      <Link
+        to={to}
         {...props}
       >
         {children}
-      </a>
+      </Link>
     </li>
   );
 }
